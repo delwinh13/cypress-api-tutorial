@@ -4,8 +4,8 @@
   "description": "Repository created in the article REST API Tests with Cypress",
   "main": "index.js",
   "scripts": {
-    "cypress: open": "./node_modules/.bin/cypress open",
-    "cypress: run": "./node_modules/.bin/cypress run --spec ** / *. spec.js"
+    "cypress:open": "./node_modules/.bin/cypress open",
+    "cypress:run": "./node_modules/.bin/cypress run --spec ** / *. spec.js"
   },
   "repository": {
     "type": "git",
