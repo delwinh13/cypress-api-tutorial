@@ -15,6 +15,27 @@
 /**
  * @type {Cypress.PluginConfig}
  */
+ const faker = require("faker");
+
+ /**
+  * @type {Cypress.PluginConfig}
+  */
+ 
+ module.exports = (on, config) => {
+   on("task", {
+     freshUser() {
+       user = {
+         nome: faker.name.firstName(),
+         email: faker.internet.email(),
+         password: faker.internet.password(),
+         administrador: "true"
+       };
+       return user;
+     }
+   })
+   return config
+ }
+
 // eslint-disable-next-line no-unused-vars
 module.exports = (on, config) => {
   // `on` is used to hook into various events Cypress emits

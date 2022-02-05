@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/delwinh13/cypress-api-tutorial#readme",
   "devDependencies": {
-    "cypress": "^9.4.1"
+    "cypress": "^9.4.1",
+    "faker": "^6.6.6"
   }
 }
